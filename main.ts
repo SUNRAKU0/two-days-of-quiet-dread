@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// The review approves the code and quietly mourns the future in the same breath.
 const line = 'LGTM. The code works, the tests pass, and none of that will matter in six months anyway.';
 
 mkdirSync(outDir, { recursive: true });
